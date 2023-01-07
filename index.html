@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<title>WebGi starter</title>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap"
+			rel="stylesheet" />
+	</head>
 
-<head>
-	<title>WebGi starter</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-</head>
+	<body>
+		<div class="navbar--container">
+			<nav class="navbar">
+				<img class="logo" src="assets/images/bmwLogo.png" alt="" />
+				<button class="nav--button">Book a test drive</button>
+			</nav>
+		</div>
+		<div class="main">
+			<section class="section first">
+				<h1>
+					Experience the Ultimate in Luxury and Performance with the BMW 8
+					Series
+				</h1>
+				<div>
+					<h4>Driving dynamics</h4>
+					<p>
+						460 kW high-performance M TwinPower Turbo 8-cylinder petrol engine
+					</p>
+				</div>
+				<img src="assets/images/heroTN.png" alt="" style="width: 215px" />
+			</section>
+			<section class="section second">
+				<div class="roadbg"></div>
+				<div class="second-content-container">
+					<div class="second--img-left">
+						<img
+							src="/assets/images/image1.png"
+							alt=""
+							style="margin-bottom: 30px" />
+						<img src="/assets/images/image2.png" alt="" />
+					</div>
+					<div>
+						<h2>Make it yours</h2>
+						<p style="margin-bottom: 30px">
+							Experience the true meaning of refined sportiness. Start shopping
+							for your 2023 BMW M850i xDrive Coupe online today, or contact your
+							local BMW Center to drive one for yourself.
+						</p>
+						<button class="customize-btn">Customize</button>
+					</div>
+				</div>
+			</section>
+		</div>
 
-<body>
-	<div id="webgi-canvas-container">
-		<canvas id="webgi-canvas"></canvas>
-	</div>
+		<div id="webgi-canvas-container">
+			<canvas id="webgi-canvas"></canvas>
+			<button class="exit-btn">Exit</button>
+		</div>
 
-	<script src="src/index.ts">
-	</script>
-</body>
+		<div class="customizer--container">
+			<ul class="strap--colors">
+				<li class="button--colors yellow"></li>
+				<li class="button--colors white"></li>
+				<li class="button--colors black"></li>
+			</ul>
+		</div>
 
+		<script src="src/index.ts"></script>
+	</body>
 </html>
